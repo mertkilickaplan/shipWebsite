@@ -388,11 +388,12 @@ a.btn {
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
-.contact-submit button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+.contact-submit button:hover,
+.contact-submit button:focus,
+.contact-submit button:active {
+  background: var(--primary) !important;
+  color: var(--text);
 }
-.contact-submit button:active { transform: scale(.97); }
 
 /* -------------------------------------------
    Fix contact form submit button appearance
