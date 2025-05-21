@@ -60,15 +60,34 @@ function App() {
             </section>
           </div>
         </section>
-        <section className="section social-engine-section">
-          <h2 className="social-engine-title">More than a Dating App — It's a Social Engine.</h2>
-          <ul className="social-engine-list">
-            <li>Verified Check-Ins: Ensure authenticity through location verification.</li>
-            <li>Only Visible When Present: You're only visible during real-world check-ins.</li>
-            <li>AI Agent Recommendations: Best venues, times, and people — tailored for you.</li>
-            <li>Gamified Challenges: Meet others through trivia, emoji games & live tasks.</li>
-            <li>Consent-Based Chat: No unsolicited messages. You're in control.</li>
-          </ul>
+        <section className="section social-section">
+          <div className="container">
+            <h2 className="social-heading">
+              More than a Dating App&nbsp;— It's a Social&nbsp;Engine
+            </h2>
+            <ul className="social-list">
+              <li className="social-item">
+                <span className="icon"></span>
+                Verified Check-Ins: Ensure authenticity through location verification.
+              </li>
+              <li className="social-item">
+                <span className="icon"></span>
+                Only Visible When Present: You're visible only during real-world check-ins.
+              </li>
+              <li className="social-item">
+                <span className="icon"></span>
+                AI Agent Recommendations: Best venues, times, and people tailored for you.
+              </li>
+              <li className="social-item">
+                <span className="icon"></span>
+                Gamified Challenges: Meet through trivia, emoji games & live tasks.
+              </li>
+              <li className="social-item">
+                <span className="icon"></span>
+                Consent-Based Chat: No unsolicited messages — you're in control.
+              </li>
+            </ul>
+          </div>
         </section>
         <div className="marquee-container">
           <div className="marquee">

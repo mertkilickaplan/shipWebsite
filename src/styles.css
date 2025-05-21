@@ -181,3 +181,63 @@ a.btn {
   font-size: .75em;
   color: var(--text);
 }
+
+/* =======================================================
+   SOCIAL-ENGINE SECTION  ·  style + minimal markup update
+   ======================================================= */
+.social-section {
+  background: var(--accent);
+  border-radius: 2rem;
+  padding: 4rem 1rem;
+  margin-block: 4rem;
+}
+
+.social-section .container {
+  width: min(1100px, 100%);
+  margin-inline: auto;
+}
+
+.social-heading {
+  font: 700 var(--fs-800)/1.2 var(--ff-slab);
+  text-align: center;
+  max-width: 28ch;
+  margin: 0 auto 3rem;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.75rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .social-list { grid-template-columns: 1fr 1fr; }
+}
+
+.social-item {
+  display: flex;
+  align-items: flex-start;
+  font-size: var(--fs-500);
+  line-height: 1.45;
+}
+
+.social-item .icon {
+  flex: none;
+  width: 1.4em;
+  height: 1.4em;
+  background: var(--primary);
+  border-radius: 50%;
+  margin-right: .9rem;
+  position: relative;
+}
+.social-item .icon::after {
+  content: "✓";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font-size: .8em;
+  color: var(--text);
+}
