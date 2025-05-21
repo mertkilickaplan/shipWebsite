@@ -20,12 +20,12 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="section waitlist-section">
+        <section className="waitlist-section">
           <div className="waitlist-card">
-            <h2 className="waitlist-title">Join the Waitlist</h2>
-            <form className="waitlist-form" action="https://formspree.io/f/XXXXXXX" method="POST">
+            <h2>Join the Waitlist</h2>
+            <form action="https://formspree.io/f/XXXX" method="POST">
               <input type="email" name="email" placeholder="Your email" required />
-              <button type="submit">Join Waitlist</button>
+              <button type="submit">Join&nbsp;Waitlist</button>
             </form>
           </div>
         </section>
