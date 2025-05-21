@@ -20,24 +20,24 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="waitlist-section">
-          <div className="waitlist-card">
-            <h2>Join the Waitlist</h2>
-            <form action="https://formspree.io/f/XXXX" method="POST">
-              <input type="email" name="email" placeholder="Your email" required />
-              <button type="submit">Join&nbsp;Waitlist</button>
-            </form>
-          </div>
+        <section className="section waitlist-section">
+          <h2 className="waitlist-title">Join the Waitlist</h2>
+          <form className="waitlist-form" action="https://formspree.io/f/XXXXXXX" method="POST">
+            <input type="email" name="email" placeholder="Your email" required />
+            <button type="submit">Join Waitlist</button>
+          </form>
         </section>
-        <section className="section why-ship-section">
-          <h2 className="why-ship-label">Why Ship?</h2>
-          <ul className="why-ship-list">
-            <li>Verified presence, not passive location</li>
-            <li>AI-powered venue suggestions</li>
-            <li>Privacy-first profile visibility</li>
-            <li>Gamified real-world challenges</li>
-            <li>For dating, friendships & professional networking</li>
-          </ul>
+        <section className="section">
+          <div className="container">
+            <span className="pill">Why Ship?</span>
+            <ul className="feature-list">
+              <li className="feature-item"><span className="icon"></span>Verified presence, not passive location</li>
+              <li className="feature-item"><span className="icon"></span>AI-powered venue suggestions</li>
+              <li className="feature-item"><span className="icon"></span>Privacy-first profile visibility</li>
+              <li className="feature-item"><span className="icon"></span>Gamified real-world challenges</li>
+              <li className="feature-item"><span className="icon"></span>Perfect for dating, friendships & networking</li>
+            </ul>
+          </div>
         </section>
         <section className="section steps-section">
           <h2 className="steps-header">Simple, Safe, Social — in 4 Steps</h2>
