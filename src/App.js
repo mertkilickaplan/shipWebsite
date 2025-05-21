@@ -98,14 +98,31 @@ function App() {
           </div>
         </div>
         <section className="section premium-section">
-          <h2 className="premium-label">Premium Benefits</h2>
-          <ul className="premium-list">
-            <li>See venue gender ratios and check-in volume</li>
-            <li>Use private mode</li>
-            <li>Get AI timing suggestions</li>
-            <li>More daily connection requests</li>
-            <li>Access premium challenges and exclusive games</li>
-          </ul>
+          <div className="container">
+            <span className="pill">Premium Benefits</span>
+            <ul className="premium-list">
+              <li className="premium-item">
+                <span className="icon"></span>
+                See venue gender ratios and check-in volume
+              </li>
+              <li className="premium-item">
+                <span className="icon"></span>
+                Use private mode
+              </li>
+              <li className="premium-item">
+                <span className="icon"></span>
+                Get AI timing suggestions
+              </li>
+              <li className="premium-item">
+                <span className="icon"></span>
+                More daily connection requests
+              </li>
+              <li className="premium-item">
+                <span className="icon"></span>
+                Access premium challenges and exclusive games
+              </li>
+            </ul>
+          </div>
         </section>
         <section className="section contact-section">
           <h2 className="contact-title">Let's Talk — or Meet IRL</h2>
