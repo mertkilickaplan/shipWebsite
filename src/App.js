@@ -54,11 +54,11 @@ function App() {
       <section className="section social-engine-section">
         <h2 className="social-engine-title">More than a Dating App — It's a Social Engine.</h2>
         <ul className="social-engine-list">
-          <li>Verified presence, not passive location</li>
-          <li>AI-powered venue suggestions</li>
-          <li>Privacy-first profile visibility</li>
-          <li>Gamified real-world challenges</li>
-          <li>For dating, friendships & professional networking</li>
+          <li>Verified Check-Ins: Ensure authenticity through location verification.</li>
+          <li>Only Visible When Present: You're only visible during real-world check-ins.</li>
+          <li>AI Agent Recommendations: Best venues, times, and people — tailored for you.</li>
+          <li>Gamified Challenges: Meet others through trivia, emoji games & live tasks.</li>
+          <li>Consent-Based Chat: No unsolicited messages. You're in control.</li>
         </ul>
       </section>
       <div className="marquee-container">
