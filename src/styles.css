@@ -129,30 +129,74 @@ a.btn {
   margin-inline: auto;
 }
 
+/* =========================
+   WAIT-LIST CARD  –  NEW LOOK
+   ========================= */
+
 .waitlist-card {
   max-width: 640px;
   margin-inline: auto;
-  padding: 3rem 2rem;
-  background: var(--accent);
-  border: 2px solid var(--primary);
-  border-radius: 1.5rem;
-  box-shadow: 0 20px 32px rgba(0,0,0,.06);
+  padding: 3.5rem 2rem;
+  background: #ffffff;
+  border-radius: 1.75rem;
+  box-shadow: 0 30px 60px rgba(0,0,0,.06), 
+              0 8px 16px rgba(0,0,0,.04);
   text-align: center;
+  position: relative;
+}
+
+.waitlist-card::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(145deg,
+               var(--primary) 0%, 
+               #ffffff 100%);
+  opacity: .18;
 }
 
 .waitlist-card h2 {
-  font: 700 var(--fs-700)/1.2 var(--ff-slab);
+  font: 700 var(--fs-700)/1.15 var(--ff-slab);
   margin-bottom: 2rem;
 }
 
 .waitlist-card form {
   display: flex;
-  gap: .75rem;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .waitlist-card input {
-  flex: 1 1 220px;
+  flex: 1 1 240px;
   min-width: 0;
+  padding: .8rem 1.1rem;
+  font-size: var(--fs-400);
+  border: 2px solid var(--primary);
+  border-radius: 9999px;
+  outline: none;
+  transition: border-color .25s;
 }
+.waitlist-card input:focus {
+  border-color: #9ddd44;
+}
+
+.waitlist-card button {
+  padding: .8rem 2.2rem;
+  font-family: var(--ff-condensed);
+  font-weight: 600;
+  letter-spacing: .04em;
+  border: none;
+  border-radius: 9999px;
+  background: var(--primary);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.waitlist-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+.waitlist-card button:active { transform: scale(.97); }
