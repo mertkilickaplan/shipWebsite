@@ -41,7 +41,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--ff-sans);
   background: var(--bg);
 }
 .header, .footer {
@@ -84,6 +84,7 @@ a {
 .section h1, .section h2 {
   margin-bottom: 24px;
   color: var(--text);
+  font-family: var(--ff-slab);
 }
 .section.about {
   background: var(--bg);
@@ -179,8 +180,9 @@ a {
   display: block;
 }
 .hero-title {
-  font-size: 3.2rem;
-  font-weight: 800;
+  font-size: var(--fs-900);
+  font-family: var(--ff-slab);
+  font-weight: 700;
   text-align: center;
   margin: 0 0 40px 0;
   line-height: 1.1;
@@ -227,8 +229,9 @@ a {
   align-items: center;
 }
 .feature-title {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: var(--fs-800);
+  font-family: var(--ff-slab);
+  font-weight: 700;
   text-align: center;
   margin-bottom: 48px;
   color: var(--text);
@@ -363,8 +366,9 @@ a {
   align-items: flex-start;
 }
 .step-card h3 {
-  font-size: 2.1rem;
-  font-weight: 600;
+  font-size: var(--fs-700);
+  font-family: var(--ff-sans);
+  font-weight: 700;
   margin-bottom: 18px;
   color: var(--text);
 }
@@ -540,7 +544,8 @@ a {
   margin-bottom: 32px;
 }
 .contact-title {
-  font-size: 1.5rem;
+  font-size: var(--fs-600);
+  font-family: var(--ff-sans);
   font-weight: 600;
   margin-bottom: 32px;
   color: var(--text);
