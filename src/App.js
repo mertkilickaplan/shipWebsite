@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <section id="about" className="section about header-hero">
-        <img src={process.env.PUBLIC_URL + "/shipLogo.jpg"} alt="OnePager Logo" className="hero-logo" />
+        <img src={process.env.PUBLIC_URL + "/shipLogo.webp"} alt="OnePager Logo" className="hero-logo" />
         <h1 className="hero-title">Turn Proximity Into Real<br />Possibility</h1>
         <div className="hero-btn-wrapper">
           <span className="hero-btn">Coming soon to iOS and Android.</span>
@@ -17,7 +17,7 @@ function App() {
           connect with real people in real places — not just profiles.
         </h2>
         <div className="feature-image-wrapper">
-          <img src={process.env.PUBLIC_URL + "/Group 36775.png"} alt="Ship App Feature" className="feature-image" />
+          <img src={process.env.PUBLIC_URL + "/hero.webp"} alt="Ship App Feature" className="feature-image" />
         </div>
       </section>
       <section className="section why-ship-section">
