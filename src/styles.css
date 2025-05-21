@@ -186,8 +186,6 @@ a.btn {
    SOCIAL-ENGINE SECTION  ·  style + minimal markup update
    ======================================================= */
 .social-section {
-  background: var(--accent);
-  border-radius: 2rem;
   padding: 4rem 1rem;
   margin-block: 4rem;
 }
