@@ -7,13 +7,17 @@
 
 .value-img img {
   width: 100%;
-  max-width: clamp(300px, 45vw, 540px);
+  max-width: clamp(360px, 55vw, 720px);
   height: auto;
   display: block;
 }
 
 @media (min-width: 992px) {
-  .value-wrap { grid-template-columns: 1.2fr 1fr; }
+  .value-wrap { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 1280px) {
+  .value-wrap { grid-template-columns: 0.9fr 1.1fr; }
 }
 
 @media (max-width: 640px) {
