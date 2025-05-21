@@ -406,3 +406,28 @@ a.btn {
   width: auto;
   box-shadow: none;
 }
+
+.contact-submit button,
+.contact-submit input[type="submit"] {
+  background: var(--primary) !important;
+  color: var(--text) !important;
+  border: none;
+  box-shadow: none;
+}
+
+.contact-submit button:hover,
+.contact-submit button:focus,
+.contact-submit button:active,
+.contact-submit input[type="submit"]:hover,
+.contact-submit input[type="submit"]:focus,
+.contact-submit input[type="submit"]:active {
+  background: var(--primary) !important;
+  color: var(--text) !important;
+}
+
+/* Optional: a subtle hover darken
+.contact-submit button:hover,
+.contact-submit input[type="submit"]:hover {
+  filter: brightness(0.95);
+}
+*/
