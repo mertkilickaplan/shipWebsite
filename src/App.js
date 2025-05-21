@@ -7,12 +7,10 @@ function App() {
     <>
       <CookieBanner />
       <main>
-        <section id="about" className="section about header-hero">
-          <img src={process.env.PUBLIC_URL + "/shipLogo.webp"} alt="OnePager Logo" className="hero-logo" />
-          <h1 className="hero-title">Turn Proximity Into Real<br />Possibility</h1>
-          <div className="hero-btn-wrapper">
-            <span className="hero-btn">Coming soon to iOS and Android.</span>
-          </div>
+        <section id="about" className="hero">
+          <img src={process.env.PUBLIC_URL + "/shipLogo.webp"} alt="OnePager Logo" className="logo" />
+          <h1>Turn Proximity Into Real Possibility</h1>
+          <button className="cta-btn">Coming soon to iOS and Android.</button>
         </section>
         <section className="section feature-section">
           <h2 className="feature-title">
