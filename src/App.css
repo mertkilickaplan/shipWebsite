@@ -43,7 +43,7 @@ body {
   background: #ffffff;
 }
 .header, .footer {
-  background: #4f8cff;
+  background: #1e60ff;
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -54,7 +54,7 @@ body {
   text-align: center;
 }
 .button {
-  background: #4f8cff;
+  background: #1e60ff;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -122,7 +122,7 @@ a {
 
 /* Footer */
 .footer {
-  background: #4f8cff;
+  background: #1e60ff;
   color: #fff;
   text-align: center;
   padding: 32px 20px;
@@ -579,7 +579,7 @@ a {
 }
 .contact-field input:focus,
 .contact-field textarea:focus {
-  border-color: #4f8cff;
+  border-color: #1e60ff;
 }
 .contact-desc {
   font-size: 1.1rem;

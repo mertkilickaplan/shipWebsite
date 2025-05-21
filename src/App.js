@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <main>
       <section id="about" className="section about header-hero">
         <img src={process.env.PUBLIC_URL + "/shipLogo.webp"} alt="OnePager Logo" className="hero-logo" />
         <h1 className="hero-title">Turn Proximity Into Real<br />Possibility</h1>
@@ -21,7 +21,7 @@ function App() {
         </div>
       </section>
       <section className="section why-ship-section">
-        <div className="why-ship-label">Why Ship?</div>
+        <h2 className="why-ship-label">Why Ship?</h2>
         <ul className="why-ship-list">
           <li>Verified presence, not passive location</li>
           <li>AI-powered venue suggestions</li>
@@ -31,24 +31,24 @@ function App() {
         </ul>
       </section>
       <section className="section steps-section">
-        <div className="steps-header">Simple, Safe, Social — in 4 Steps</div>
+        <h2 className="steps-header">Simple, Safe, Social — in 4 Steps</h2>
         <div className="steps-cards">
-          <div className="step-card">
+          <section className="step-card">
             <h3>Check In</h3>
             <p>Use Google Maps to check in at your current venue. We'll confirm you're there — not just passing by.</p>
-          </div>
-          <div className="step-card">
+          </section>
+          <section className="step-card">
             <h3>Discover People Nearby</h3>
             <p>After 5 minutes, your presence is verified. You'll see others who also checked in.</p>
-          </div>
-          <div className="step-card">
+          </section>
+          <section className="step-card">
             <h3>Send a Connection Request</h3>
             <p>Freemium or premium: you can send a limited number of requests. Mutual acceptance unlocks chat.</p>
-          </div>
-          <div className="step-card">
+          </section>
+          <section className="step-card">
             <h3>Chat, Play, Connect</h3>
             <p>Play trivia, accept challenges, or just talk. Socializing is fun again — and actually real.</p>
-          </div>
+          </section>
         </div>
       </section>
       <section className="section social-engine-section">
@@ -70,7 +70,7 @@ function App() {
         </div>
       </div>
       <section className="section premium-section">
-        <div className="premium-label">Premium Benefits</div>
+        <h2 className="premium-label">Premium Benefits</h2>
         <ul className="premium-list">
           <li>See venue gender ratios and check-in volume</li>
           <li>Use private mode</li>
@@ -104,7 +104,7 @@ function App() {
           <button type="submit" className="contact-submit">Submit</button>
         </form>
       </section>
-    </div>
+    </main>
   );
 }
 
