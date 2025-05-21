@@ -1,3 +1,18 @@
+# Onepager
+
+Bu proje, React ile hazırlanmış modern ve sade bir one pager websitesi şablonudur.
+
+## Başlatmak için
+
+```bash
+npm install
+npm start
+```
+
+## Özelleştirme
+- `src/App.js` dosyasındaki içerikleri ve linkleri kendinize göre düzenleyebilirsiniz.
+- `src/App.css` dosyasından renk ve tasarım ayarlarını değiştirebilirsiniz.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

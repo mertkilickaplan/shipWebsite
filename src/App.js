@@ -1,23 +1,109 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <section id="about" className="section about header-hero">
+        <img src={process.env.PUBLIC_URL + "/shipLogo.jpg"} alt="OnePager Logo" className="hero-logo" />
+        <h1 className="hero-title">Turn Proximity Into Real<br />Possibility</h1>
+        <div className="hero-btn-wrapper">
+          <span className="hero-btn">Coming soon to iOS and Android.</span>
+        </div>
+      </section>
+      <section className="section feature-section">
+        <h2 className="feature-title">
+          Ship helps you discover and<br />
+          connect with real people in real places — not just profiles.
+        </h2>
+        <div className="feature-image-wrapper">
+          <img src={process.env.PUBLIC_URL + "/Group 36775.png"} alt="Ship App Feature" className="feature-image" />
+        </div>
+      </section>
+      <section className="section why-ship-section">
+        <div className="why-ship-label">Why Ship?</div>
+        <ul className="why-ship-list">
+          <li>Verified presence, not passive location</li>
+          <li>AI-powered venue suggestions</li>
+          <li>Privacy-first profile visibility</li>
+          <li>Gamified real-world challenges</li>
+          <li>For dating, friendships & professional networking</li>
+        </ul>
+      </section>
+      <section className="section steps-section">
+        <div className="steps-header">Simple, Safe, Social — in 4 Steps</div>
+        <div className="steps-cards">
+          <div className="step-card">
+            <h3>Check In</h3>
+            <p>Use Google Maps to check in at your current venue. We'll confirm you're there — not just passing by.</p>
+          </div>
+          <div className="step-card">
+            <h3>Discover People Nearby</h3>
+            <p>After 5 minutes, your presence is verified. You'll see others who also checked in.</p>
+          </div>
+          <div className="step-card">
+            <h3>Send a Connection Request</h3>
+            <p>Freemium or premium: you can send a limited number of requests. Mutual acceptance unlocks chat.</p>
+          </div>
+          <div className="step-card">
+            <h3>Chat, Play, Connect</h3>
+            <p>Play trivia, accept challenges, or just talk. Socializing is fun again — and actually real.</p>
+          </div>
+        </div>
+      </section>
+      <section className="section social-engine-section">
+        <h2 className="social-engine-title">More than a Dating App — It's a Social Engine.</h2>
+        <ul className="social-engine-list">
+          <li>Verified presence, not passive location</li>
+          <li>AI-powered venue suggestions</li>
+          <li>Privacy-first profile visibility</li>
+          <li>Gamified real-world challenges</li>
+          <li>For dating, friendships & professional networking</li>
+        </ul>
+      </section>
+      <div className="marquee-container">
+        <div className="marquee">
+          <div className="marquee-content-wrapper">
+            <div className="marquee-content">Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp;</div>
+            <div className="marquee-content">Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp; Fair, Flexible, and Worth It. 💗&nbsp;&nbsp;</div>
+          </div>
+        </div>
+      </div>
+      <section className="section premium-section">
+        <div className="premium-label">Premium Benefits</div>
+        <ul className="premium-list">
+          <li>See venue gender ratios and check-in volume</li>
+          <li>Use private mode</li>
+          <li>Get AI timing suggestions</li>
+          <li>More daily connection requests</li>
+          <li>Access premium challenges and exclusive games</li>
+        </ul>
+      </section>
+      <section className="section contact-section">
+        <h2 className="contact-title">Let's Talk — or Meet IRL</h2>
+        <form className="contact-form">
+          <div className="contact-row">
+            <div className="contact-field">
+              <label htmlFor="firstName">First name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="First name" required />
+            </div>
+            <div className="contact-field">
+              <label htmlFor="lastName">Last name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Last name" required />
+            </div>
+          </div>
+          <div className="contact-field">
+            <label htmlFor="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+          </div>
+          <div className="contact-field">
+            <label htmlFor="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Message" required rows="3"></textarea>
+          </div>
+          <div className="contact-desc">Questions? Press inquiry? Want to partner with us? Drop us a line.</div>
+          <button type="submit" className="contact-submit">Submit</button>
+        </form>
+      </section>
     </div>
   );
 }
