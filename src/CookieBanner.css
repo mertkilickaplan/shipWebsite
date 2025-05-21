@@ -3,8 +3,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #222;
-  color: #fff;
+  background: var(--text);
+  color: var(--bg);
   padding: 18px 16px;
   display: flex;
   justify-content: center;
@@ -15,8 +15,8 @@
   gap: 18px;
 }
 .cookie-accept-btn {
-  background: #1e60ff;
-  color: #fff;
+  background: var(--primary);
+  color: var(--text);
   border: none;
   border-radius: 20px;
   padding: 10px 24px;
@@ -27,7 +27,7 @@
   transition: background 0.2s;
 }
 .cookie-accept-btn:hover {
-  background: #3566b8;
+  background: #c3f46f;
 }
 @media (max-width: 700px) {
   .cookie-banner {
@@ -40,4 +40,11 @@
     width: 100%;
     margin-left: 0;
   }
-} 
+}
+.card { background: var(--accent); }
+.btn-primary,
+a.btn {
+  background: var(--primary);
+  color: var(--text);
+}
+.btn-primary:hover { background: #c3f46f; } 

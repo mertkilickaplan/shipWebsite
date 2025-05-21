@@ -1,3 +1,5 @@
+@import './styles.css';
+
 .App {
   text-align: center;
 }
@@ -14,18 +16,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--primary);
 }
 
 @keyframes App-logo-spin {
@@ -40,22 +42,22 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #ffffff;
+  background: var(--bg);
 }
 .header, .footer {
-  background: #1e60ff;
-  color: white;
+  background: var(--primary);
+  color: var(--text);
   padding: 40px 20px;
   text-align: center;
 }
 .features, .download {
-  background: #f4f4f4;
+  background: var(--accent);
   padding: 40px 20px;
   text-align: center;
 }
 .button {
-  background: #1e60ff;
-  color: #fff;
+  background: var(--primary);
+  color: var(--text);
   padding: 12px 24px;
   border: none;
   border-radius: 6px;
@@ -66,7 +68,7 @@ body {
   transition: background 0.2s;
 }
 .button:hover {
-  background: #3566b8;
+  background: #c3f46f;
 }
 a {
   color: inherit;
@@ -81,20 +83,20 @@ a {
 }
 .section h1, .section h2 {
   margin-bottom: 24px;
-  color: #222;
+  color: var(--text);
 }
 .section.about {
-  background: #ffffff;
+  background: var(--bg);
   text-align: center;
 }
 .section.services {
-  background: #fff;
+  background: var(--bg);
 }
 .section.projects {
-  background: #f7faff;
+  background: var(--accent);
 }
 .section.contact {
-  background: #fff;
+  background: var(--bg);
   text-align: center;
 }
 
@@ -106,7 +108,7 @@ a {
   justify-content: center;
 }
 .project-card {
-  background: #fff;
+  background: var(--accent);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   padding: 32px 24px;
@@ -122,8 +124,8 @@ a {
 
 /* Footer */
 .footer {
-  background: #1e60ff;
-  color: #fff;
+  background: var(--primary);
+  color: var(--text);
   text-align: center;
   padding: 32px 20px;
   font-size: 1rem;
@@ -153,7 +155,7 @@ a {
   width: 40vw;
   height: auto;
   object-fit: contain;
-  background: #f7faff;
+  background: var(--accent);
   border-radius: 16px;
   padding: 12px;
 }
@@ -166,7 +168,7 @@ a {
   min-height: 60vh;
   padding-top: 48px;
   padding-bottom: 48px;
-  background: #fff;
+  background: var(--bg);
 }
 .hero-logo {
   max-width: 320px;
@@ -183,15 +185,15 @@ a {
   margin: 0 0 40px 0;
   line-height: 1.1;
   letter-spacing: -2px;
-  color: #111;
+  color: var(--text);
 }
 .hero-btn-wrapper {
   display: flex;
   justify-content: center;
 }
 .hero-btn {
-  background: #111;
-  color: #fff;
+  background: var(--text);
+  color: var(--bg);
   padding: 16px 36px;
   border-radius: 32px;
   font-size: 1.1rem;
@@ -217,7 +219,7 @@ a {
 }
 
 .feature-section {
-  background: #fff;
+  background: var(--bg);
   padding-top: 64px;
   padding-bottom: 64px;
   display: flex;
@@ -229,7 +231,7 @@ a {
   font-weight: 800;
   text-align: center;
   margin-bottom: 48px;
-  color: #111;
+  color: var(--text);
   line-height: 1.15;
   letter-spacing: -1px;
 }
@@ -239,7 +241,7 @@ a {
   align-items: center;
   width: 100%;
   min-height: 320px;
-  background: radial-gradient(ellipse at center, #f7faff 60%, #fff 100%);
+  background: radial-gradient(ellipse at center, var(--accent) 60%, var(--bg) 100%);
   border-radius: 32px;
   padding: 32px 0;
 }
@@ -268,7 +270,7 @@ a {
 }
 
 .why-ship-section {
-  background: #fff;
+  background: var(--bg);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -279,7 +281,7 @@ a {
 }
 .why-ship-label {
   background: #eaffc7;
-  color: #222;
+  color: var(--text);
   display: inline-block;
   padding: 16px 48px;
   border-radius: 40px;
@@ -294,7 +296,7 @@ a {
   list-style: disc inside;
   font-size: 2.1rem;
   font-weight: 600;
-  color: #111;
+  color: var(--text);
   margin: 0;
   padding-left: 24px;
   line-height: 1.25;
@@ -323,14 +325,14 @@ a {
 
 /* Steps Section */
 .steps-section {
-  background: #f7faff;
+  background: var(--accent);
   padding: 64px 20px 80px 20px;
   border-radius: 0 0 32px 32px;
   margin-bottom: 40px;
 }
 .steps-header {
   background: #e6f7ce;
-  color: #222;
+  color: var(--text);
   font-size: 1.2rem;
   font-weight: 600;
   padding: 16px 32px;
@@ -348,7 +350,7 @@ a {
   flex-wrap: nowrap;
 }
 .step-card {
-  background: #ededfa;
+  background: var(--accent);
   border-radius: 32px;
   padding: 40px 28px;
   min-width: 240px;
@@ -364,11 +366,11 @@ a {
   font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 18px;
-  color: #181818;
+  color: var(--text);
 }
 .step-card p {
   font-size: 1.15rem;
-  color: #222;
+  color: var(--text);
   margin: 0;
 }
 
@@ -407,7 +409,7 @@ a {
 
 /* Social Engine Section */
 .social-engine-section {
-  background: #fff;
+  background: var(--bg);
   padding: 64px 20px 48px 20px;
   text-align: left;
   max-width: 1200px;
@@ -417,13 +419,13 @@ a {
   font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 36px;
-  color: #111;
+  color: var(--text);
   letter-spacing: -1px;
 }
 .social-engine-list {
   font-size: 2.5rem;
   font-weight: 400;
-  color: #111;
+  color: var(--text);
   list-style: disc inside;
   margin: 0;
   padding-left: 0;
@@ -444,7 +446,7 @@ a {
 /* Marquee (Kayan Alt Bant) */
 .marquee-container {
   width: 100vw;
-  background: #111;
+  background: var(--text);
   height: 48px;
   overflow: hidden;
   display: flex;
@@ -470,7 +472,7 @@ a {
 .marquee-content {
   display: block;
   min-width: max-content;
-  color: #fff;
+  color: var(--bg);
   font-size: 1.3rem;
   font-weight: 500;
   padding-right: 48px;
@@ -496,7 +498,7 @@ a {
 .premium-label {
   display: inline-block;
   background: #e6f7ce;
-  color: #222;
+  color: var(--text);
   font-size: 1.3rem;
   font-weight: 500;
   border-radius: 40px;
@@ -510,7 +512,7 @@ a {
 .premium-list {
   font-size: 2.5rem;
   font-weight: 400;
-  color: #111;
+  color: var(--text);
   list-style: disc inside;
   margin: 0;
   padding-left: 0;
@@ -541,7 +543,7 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 32px;
-  color: #222;
+  color: var(--text);
 }
 .contact-form {
   max-width: 1200px;
@@ -564,7 +566,7 @@ a {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 4px;
-  color: #222;
+  color: var(--text);
 }
 .contact-field input,
 .contact-field textarea {
@@ -573,17 +575,17 @@ a {
   border: 2px solid #bbb;
   border-radius: 16px;
   outline: none;
-  background: #fff;
+  background: var(--bg);
   transition: border 0.2s;
   resize: none;
 }
 .contact-field input:focus,
 .contact-field textarea:focus {
-  border-color: #1e60ff;
+  border-color: var(--primary);
 }
 .contact-desc {
   font-size: 1.1rem;
-  color: #222;
+  color: var(--text);
   margin: 12px 0 0 0;
 }
 .contact-submit {
@@ -591,17 +593,17 @@ a {
   padding: 16px 0;
   font-size: 1.2rem;
   font-weight: 500;
-  background: #fff;
-  color: #222;
-  border: 2px solid #222;
+  background: var(--bg);
+  color: var(--text);
+  border: 2px solid var(--text);
   border-radius: 32px;
   cursor: pointer;
   margin-top: 12px;
   transition: background 0.2s, color 0.2s;
 }
 .contact-submit:hover {
-  background: #222;
-  color: #fff;
+  background: var(--text);
+  color: var(--bg);
 }
 @media (max-width: 900px) {
   .contact-row {
@@ -614,18 +616,18 @@ a {
 }
 
 .waitlist-section {
-  background: #f7faff;
+  background: var(--accent);
   padding: 56px 20px 56px 20px;
   text-align: center;
   border-radius: 24px;
   margin: 32px auto 0 auto;
   max-width: 600px;
-  box-shadow: 0 2px 12px rgba(30,96,255,0.06);
+  box-shadow: 0 2px 12px var(--primary);
 }
 .waitlist-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #1e60ff;
+  color: var(--primary);
   margin-bottom: 24px;
 }
 .waitlist-form {
@@ -637,7 +639,7 @@ a {
 }
 .waitlist-form input[type="email"] {
   padding: 14px 18px;
-  border: 2px solid #1e60ff;
+  border: 2px solid var(--primary);
   border-radius: 24px;
   font-size: 1.1rem;
   outline: none;
@@ -645,11 +647,11 @@ a {
   transition: border 0.2s;
 }
 .waitlist-form input[type="email"]:focus {
-  border-color: #3566b8;
+  border-color: #c3f46f;
 }
 .waitlist-form button {
-  background: #1e60ff;
-  color: #fff;
+  background: var(--primary);
+  color: var(--text);
   border: none;
   border-radius: 24px;
   padding: 14px 32px;
@@ -659,7 +661,7 @@ a {
   transition: background 0.2s;
 }
 .waitlist-form button:hover {
-  background: #3566b8;
+  background: #c3f46f;
 }
 @media (max-width: 700px) {
   .waitlist-form {
@@ -669,4 +671,8 @@ a {
   .waitlist-section {
     padding: 32px 8px;
   }
+}
+
+.card {
+  background: var(--accent);
 }

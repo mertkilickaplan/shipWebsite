@@ -1,0 +1,20 @@
+:root {
+  --primary: #D7FF81;        /* main accent color */
+  --accent:  #BC96FF33;      /* 20 %-opacity purple (hex alpha 33) */
+  --text:    #000000;        /* primary text color */
+  --bg:      #FFFFFF;        /* background color */
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.btn-primary,
+a.btn {
+  background: var(--primary);
+  color: var(--text);
+}
+.btn-primary:hover { background: #c3f46f; } /* 10 % darker */
+
+.card { background: var(--accent); } 
