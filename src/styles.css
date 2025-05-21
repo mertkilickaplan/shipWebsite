@@ -367,11 +367,9 @@ a.btn {
 }
 
 .contact-submit {
+  background: transparent !important;
   border: none !important;
   padding: 0;
-  grid-column: 1 / -1;
-  margin-top: 1rem;
-  text-align: center;
 }
 
 .contact-submit button {
