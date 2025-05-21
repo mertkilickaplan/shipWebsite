@@ -12,13 +12,12 @@ function App() {
           <h1>Turn Proximity Into Real Possibility</h1>
           <button className="cta-btn">Coming soon to iOS and Android.</button>
         </section>
-        <section className="section feature-section">
-          <h2 className="feature-title">
-            Ship helps you discover and<br />
-            connect with real people in real places — not just profiles.
-          </h2>
-          <div className="feature-image-wrapper">
-            <img src={process.env.PUBLIC_URL + "/hero.webp"} alt="Ship App Feature" className="feature-image" />
+        <section className="section">
+          <div className="value-wrap">
+            <h2 className="value-heading">Ship helps you discover and connect with real people in real places — not just profiles.</h2>
+            <div className="value-img">
+              <img src={process.env.PUBLIC_URL + "/mockup.png"} alt="Ship app mock-up" />
+            </div>
           </div>
         </section>
         <section className="section waitlist-section">

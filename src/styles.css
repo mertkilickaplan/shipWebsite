@@ -99,3 +99,24 @@ a.btn {
   .hero { gap: 1.5rem; }
   .hero h1 { font-size: var(--fs-800); }  /* a bit smaller on phones      */
 }
+
+.value-wrap {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .value-wrap { grid-template-columns: 1fr 1fr; }
+}
+
+.value-heading {
+  max-width: 22ch;
+  margin-inline: auto;
+  line-height: 1.15;
+}
+
+.value-img {
+  border-radius: 2rem;
+  box-shadow: 0 25px 40px rgba(0,0,0,.08);
+  overflow: hidden;
+}
