@@ -434,3 +434,17 @@ a.btn {
   filter: brightness(0.95);
 }
 */
+
+.waitlist-form input:disabled,
+.waitlist-form button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.waitlist-form button {
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.waitlist-form button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,.1);
+}
