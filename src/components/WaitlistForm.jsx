@@ -23,7 +23,10 @@ export default function WaitlistForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4">
+    <form
+      onSubmit={handleSubmit}
+      className="waitlist-form flex flex-wrap items-center justify-center gap-4 max-w-2xl mx-auto py-4"
+    >
       <input
         type="email"
         placeholder="Your email"
@@ -31,16 +34,16 @@ export default function WaitlistForm() {
         value={email}
         onChange={e => setEmail(e.target.value)}
         disabled={loading}
-        className="px-4 py-3 rounded-full border-2 border-primary focus:outline-none focus:border-secondary"
+        className="flex-1 min-w-[200px] px-6 py-3 rounded-full border-2 border-[#D7FF81] focus:outline-none focus:border-[#BC96FF]"
       />
       <button
         type="submit"
         disabled={loading}
-        className="bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition-colors"
+        className="px-6 py-3 rounded-full bg-[#D7FF81] text-black font-semibold transition hover:scale-[1.03]"
       >
         {loading ? 'Saving…' : 'Join Waitlist'}
       </button>
-      {message && <div className="text-center text-sm mt-2">{message}</div>}
+      {message && <p className="w-full text-center mt-2 text-sm text-gray-700">{message}</p>}
     </form>
   );
 } 
