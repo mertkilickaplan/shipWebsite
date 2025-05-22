@@ -1,6 +1,5 @@
 import React, { Suspense, lazy } from "react";
 import "./App.css";
-import CookieBanner from "./CookieBanner";
 
 const HeroSection = lazy(() => import("./HeroSection"));
 const ValueSection = lazy(() => import("./ValueSection"));
@@ -15,7 +14,6 @@ const ContactSection = lazy(() => import("./ContactSection"));
 function App() {
   return (
     <>
-      <CookieBanner />
       <main>
         <Suspense fallback={<div>Loading...</div>}>
           <HeroSection />
